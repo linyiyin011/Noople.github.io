@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noople Noodle House Contact</title>
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+<header class="nav_bar">
+  <div class="nav_container container">
+
+    <div class="nav_left">
+      <a class="nav_logo" href="index.html" aria-label="Go to homepage">
+        <img
+          src="images/Logo.png"
+          alt="NOOPLE"
+          class="nav_logo_img"
+          onerror="this.style.display='none'; this.parentNode.innerHTML='NOOPLE';"
+        >
+      </a>
+
+      <nav class="nav_links" aria-label="Primary">
+        <a class="button_home nav_link" href="index.html">HOME</a>
+        <a class="button_menu nav_link" href="Menu.html">MENU</a>
+        <a class="button_catering nav_link" href="Catering.html">CATERING</a>
+        <a class="button_contact_nav nav_link" href="Contact.html">CONTACT</a>
+      </nav>
+    </div>
+
+    <div class="nav_right">
+      <a class="button_order_online nav_action_button" href="https://gosnappy.io/owa/r/noople-noodle-dumpling-house/8233/menu_725?skipBeforeEnter=true" target="_blank" rel="noopener">
+        ORDER ONLINE
+      </a>
+    </div>
+
+    <button class="nav_toggle" type="button" aria-label="Toggle menu" id="nav_toggle">
+      <span class="nav_toggle_bar"></span>
+      <span class="nav_toggle_bar"></span>
+      <span class="nav_toggle_bar"></span>
+    </button>
+  </div>
+
+  <div class="nav_mobile" id="nav_mobile">
+    <a class="nav_mobile_link" href="index.html">HOME</a>
+    <a class="nav_mobile_link" href="menu.html">MENU</a>
+    <a class="nav_mobile_link" href="catering.html">CATERING</a>
+    <a class="nav_mobile_link" href="contact.html">CONTACT</a>
+
+    <div class="nav_mobile_actions">
+      <a class="nav_action_button" href="#">ORDER ONLINE</a>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- CONTACT页面  -->
+<main class="contact_page">
+
+  <section class="contact_hero">
+    <h1 class="contact_hero_title">CONTACT US</h1>
+  </section>
+
+  <section class="contact_panel_section">
+    <div class="container contact_panel">
+
+      <!-- TOP AREA -->
+      <div class="contact_top_grid">
+
+        <div class="contact_left_top">
+          <div class="contact_email_list">
+            <div class="contact_line">
+              <span class="contact_label">Email:</span>
+              <a class="contact_value" href="#">nooplehouse@gmail.com</a>
+            </div>
+
+            <div class="contact_line">
+              <span class="contact_label">Telephone:</span>
+              <span class="contact_value">6044337807</span>
+            </div>
+          </div>
+
+          <div class="contact_address_block">
+            <div class="contact_address_title">Address</div>
+            <div class="contact_address_text">
+              7-3003 Kingsway,<br>
+              Burnaby,<br>
+              BC, Canada
+            </div>
+          </div>
+        </div>
+
+        <div class="contact_right">
+          <img
+            class="contact_side_img"
+            src="images/AllNoodle.jpg"
+            alt="Noople photo"
+            onerror="this.style.display='none'; this.parentNode.classList.add('is_placeholder');"
+          >
+        </div>
+
+      </div>
+      
+
+      <div class="contact_divider"></div>
+
+      <div class="contact_social_block">
+        <div class="contact_social_title">FOLLOW US ON SOCIAL MEDIA</div>
+
+        <div class="contact_social_row">
+          <a class="contact_social_icon_box" href="#" aria-label="Instagram">◎</a>
+          <a class="contact_social_icon_text" href="#" aria-label="Xiaohongshu">小红书</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+
+<!-- 页脚 -->
+<footer class="footer_section">
+  <div class="container footer_container_new">
+
+    <div class="footer_col_left">
+      <div class="footer_desc">
+        Noople Noodle House brings you a relaxed, no-rush dining experience,
+        featuring fresh noodles and crispy fried fish made to order.
+      </div>
+      <div class="footer_copy">© 2026 NOOPLE NOODLE HOUSE</div>
+    </div>
+
+    <div class="footer_col_right">
+      <a class="footer_link" href="index.html">Home</a>
+      <a class="footer_link" href="menu.html">Menu</a>
+      <a class="footer_link" href="catering.html">Catering</a>
+      <a class="footer_link" href="contact.html">Contact Us</a>
+
+      <div class="footer_right_bottom">
+        <div class="footer_location">
+          7-3003 KINGSWAY, BURNABY
+        </div>
+
+        <div class="footer_social_row">
+          <a class="social_icon_box" href="#" aria-label="Instagram">◎</a>
+          <a class="social_icon_text" href="#" aria-label="Xiaohongshu">小红书</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script>
+  (function () {
+    var toggle = document.getElementById("nav_toggle");
+    var mobile = document.getElementById("nav_mobile");
+    var isOpen = false;
+
+    if (!toggle || !mobile) return;
+
+    toggle.addEventListener("click", function () {
+      isOpen = !isOpen;
+      mobile.classList.toggle("is_open", isOpen);
+    });
+
+    mobile.addEventListener("click", function (e) {
+      if (e.target.classList.contains("nav_mobile_link")) {
+        isOpen = false;
+        mobile.classList.remove("is_open");
+      }
+    });
+  })();
+</script>
+
+
+</body>
+</html>

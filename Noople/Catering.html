@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noople Noodle House Catering</title>
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/catering.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="nav_bar">
+  <div class="nav_container container">
+
+    <div class="nav_left">
+      <a class="nav_logo" href="index.html" aria-label="Go to homepage">
+        <img
+          src="images/Logo.png"
+          alt="NOOPLE"
+          class="nav_logo_img"
+          onerror="this.style.display='none'; this.parentNode.innerHTML='NOOPLE';"
+        >
+      </a>
+
+      <nav class="nav_links" aria-label="Primary">
+        <a class="button_home nav_link" href="index.html">HOME</a>
+        <a class="button_menu nav_link" href="Menu.html">MENU</a>
+        <a class="button_catering nav_link" href="Catering.html">CATERING</a>
+        <a class="button_contact_nav nav_link" href="Contact.html">CONTACT</a>
+      </nav>
+    </div>
+
+    <div class="nav_right">
+      <a class="button_order_online nav_action_button" href="https://gosnappy.io/owa/r/noople-noodle-dumpling-house/8233/menu_725?skipBeforeEnter=true" target="_blank" rel="noopener">
+        ORDER ONLINE
+      </a>
+    </div>
+
+    <button class="nav_toggle" type="button" aria-label="Toggle menu" id="nav_toggle">
+      <span class="nav_toggle_bar"></span>
+      <span class="nav_toggle_bar"></span>
+      <span class="nav_toggle_bar"></span>
+    </button>
+  </div>
+
+  <div class="nav_mobile" id="nav_mobile">
+    <a class="nav_mobile_link" href="index.html">HOME</a>
+    <a class="nav_mobile_link" href="Menu.html">MENU</a>
+    <a class="nav_mobile_link" href="Catering.html">CATERING</a>
+    <a class="nav_mobile_link" href="Contact.html">CONTACT</a>
+
+    <div class="nav_mobile_actions">
+      <a class="nav_action_button" href="Menu.html">ORDER ONLINE</a>
+    </div>
+  </div>
+</header>
+<!-- /NAVBAR -->
+
+
+<!-- CATERING SECTION -->
+<section class="catering-section">
+  <div class="catering-container">
+
+    <div class="catering-header">
+      <h1>CATERING</h1>
+      <p>Flexible catering solutions for groups and events</p>
+    </div>
+
+    <div class="catering-columns">
+      <!-- LEFT -->
+      <div class="catering-column">
+        <h2 class="catering-column-title">Group Catering</h2>
+
+        <div class="catering-image-wrap">
+          <img src="images/AllNoodle.jpg" alt="Group Catering">
+        </div>
+
+        <div class="catering-text">
+          <p>
+            Perfect for group gatherings, celebrations, and casual get-togethers.
+          </p>
+          <p>
+            Designed for sharing and enjoying together.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="catering-column">
+        <h2 class="catering-column-title">Office &amp; Events</h2>
+
+        <div class="catering-image-wrap">
+          <img src="images/DeepFried/FamilyPack.jpg" alt="Office & Events">
+        </div>
+
+        <div class="catering-text">
+          <p>
+            Ideal for office lunches, team events, and private functions.
+          </p>
+          <p>
+            Flexible portions and customizable menu options available.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /CATERING SECTION -->
+
+
+<!-- FOOTER -->
+<footer class="footer_section">
+  <div class="container footer_container_new">
+
+    <div class="footer_col_left">
+      <div class="footer_desc">
+        Noople Noodle House brings you a relaxed, no-rush dining experience,
+        featuring fresh noodles and crispy fried fish made to order.
+      </div>
+      <div class="footer_copy">© 2026 NOOPLE NOODLE HOUSE</div>
+    </div>
+
+    <div class="footer_col_right">
+      <a class="footer_link" href="index.html">Home</a>
+      <a class="footer_link" href="Menu.html">Menu</a>
+      <a class="footer_link" href="Catering.html">Catering</a>
+      <a class="footer_link" href="Contact.html">Contact Us</a>
+
+      <div class="footer_right_bottom">
+        <div class="footer_location">
+          7-3003 KINGSWAY, BURNABY
+        </div>
+
+        <div class="footer_social_row">
+          <a class="social_icon_box" href="#" aria-label="Instagram">◎</a>
+          <a class="social_icon_text" href="#" aria-label="Xiaohongshu">小红书</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+
+<!-- JS（导航栏） -->
+<script>
+  (function () {
+    var toggle = document.getElementById("nav_toggle");
+    var mobile = document.getElementById("nav_mobile");
+    var isOpen = false;
+
+    if (!toggle || !mobile) return;
+
+    toggle.addEventListener("click", function () {
+      isOpen = !isOpen;
+      mobile.classList.toggle("is_open", isOpen);
+    });
+
+    mobile.addEventListener("click", function (e) {
+      if (e.target.classList.contains("nav_mobile_link")) {
+        isOpen = false;
+        mobile.classList.remove("is_open");
+      }
+    });
+  })();
+</script>
+<!-- /JS -->
+
+</body>
+</html>

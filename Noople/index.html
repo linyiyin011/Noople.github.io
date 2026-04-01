@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noople Noodle House</title>
+
+  
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 导航栏 -->
+  <header class="nav_bar">
+    <div class="nav_container container">
+
+      <!-- 导航栏左侧 -->
+      <div class="nav_left">
+        <a class="nav_logo" href="#top" aria-label="Go to homepage">
+          <img src="images/Logo.png" alt="Logo" class="nav_logo_img">
+        </a>
+
+        <nav class="nav_links" aria-label="Primary">
+          <a class="button_home nav_link" href="#top">HOME</a>
+          <a class="button_menu nav_link" href="Menu.html">MENU</a>
+          <a class="button_catering nav_link" href="Catering.html">CATERING</a>
+          <a class="button_contact_nav nav_link" href="Contact.html">CONTACT</a>
+        </nav>
+      </div>
+
+      <!-- 导航栏右侧 -->
+      <div class="nav_right">
+        <a class="button_order_online nav_action_button" href="https://gosnappy.io/owa/r/noople-noodle-dumpling-house/8233/menu_725?skipBeforeEnter=true" 
+        target="_blank" rel="noopener">ORDER ONLINE</a>
+      </div>
+
+      <!-- 手机端 -->
+      <button class="nav_toggle" type="button" aria-label="Toggle menu" id="nav_toggle">
+        <span class="nav_toggle_bar"></span>
+        <span class="nav_toggle_bar"></span>
+        <span class="nav_toggle_bar"></span>
+      </button>
+
+    </div>
+
+    <!-- 手机端导航栏 -->
+    <div class="nav_mobile" id="nav_mobile">
+      <a class="button_home nav_mobile_link" href="#top">HOME</a>
+      <a class="button_menu nav_mobile_link" href="#menu_section">MENU</a>
+      <a class="button_catering nav_mobile_link" href="#catering_section">CATERING</a>
+      <a class="button_contact_nav nav_mobile_link" href="#contact_section">CONTACT</a>
+      <div class="nav_mobile_actions">
+        <a class="button_order_online nav_action_button" href="https://gosnappy.io/owa/r/noople-noodle-dumpling-house/8233/menu_725?skipBeforeEnter=true" target="_blank" rel="noopener">ORDER ONLINE</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- 滚动栏 -->
+  <section class="hero_section" id="top" aria-label="Hero Slider">
+    <div class="hero_slider_track" id="hero_slider_track">
+
+      <div class="hero_slide is_active">
+        <img src="images/AllNoodle.jpg" alt="Slide 1" class="hero_bg_img">
+      </div>
+
+      <div class="hero_slide is_active">
+        <img src="images/DeepFried/Fish and Chips.jpg" alt="Slide 2" class="hero_bg_img">
+      </div>
+      
+      <div class="hero_slide">
+        <img src="images/Dry/ChiliOilWonton.jpg" alt="Slide 3" class="hero_bg_img">
+      </div>
+
+      <div class="hero_slide">
+        <img src="images/Dim/Xiaolong.jpg" alt="Slide 4" class="hero_bg_img">
+      </div>
+
+    </div>
+
+    <div class="hero_overlay">
+      <div class="hero_center">
+        <div class="hero_title">NOOPLE NOODLE HOUSE<span class="hero_title_dot">®</span></div>
+        <div class="hero_subtitle">No Rush, Be Fresh</div>
+
+        <div class="hero_icon_wrap">
+          <img src="images/Logo.png" alt="Center icon" class="hero_icon_img">
+        </div>
+
+        <div class="hero_hiring">We’re hiring for the following location!</div>
+
+        <div class="hero_locations">
+          <span class="hero_loc">7-3003 KINGSWAY<br>(BURNABY)<br><br>604-433-7807</span>
+        </div>
+
+        <a class="button_view_details hero_button" href="#menu_section">VIEW DETAILS</a>
+      </div>
+    </div>
+
+    <button class="hero_arrow hero_prev" type="button" aria-label="Previous" id="hero_prev">‹</button>
+    <button class="hero_arrow hero_next" type="button" aria-label="Next" id="hero_next">›</button>
+  </section>
+
+
+  <!-- 首页第二部分：店介绍 -->
+  <section class="intro_section" id="about_section">
+    <div class="container intro_container">
+
+      <div class="intro_left">
+        <div class="intro_img_frame">
+          <img src="images/DeepFried/FamilyPack.jpg" alt="Intro image" class="intro_img">
+        </div>
+      </div>
+
+      <div class="intro_right">
+        <div class="intro_text">
+          <p>
+            Welcome to Noople Noodle House, where fresh ingredients and comforting flavours come together in a fast and casual dining experience.
+          </p>
+
+          <p>
+            Our menu features freshly prepared noodles served with rich, slow-simmered broths and savoury sauces. 
+            We also offer crispy fried fish, juicy popcorn chicken, and classic steamed dumplings like xiao long bao — all made with fresh ingredients and cooked to order for a satisfying meal every time.
+          </p>
+        </div>
+
+        <div class="intro_buttons">
+          <a class="button_full_menu outline_button" href="Menu.html">FULL MENU</a>
+        </div>
+
+        <div class="as_seen_on">
+          <div class="as_seen_title">As Seen On</div>
+
+          <div class="as_seen_grid">
+            <div class="as_seen_card">
+              <img src="images/AllNoodle.jpg" alt="As seen 1" class="as_seen_img">
+            </div>
+            <div class="as_seen_card">
+              <img src="images/DeepFried/Fish and Chips.jpg" alt="As seen 2" class="as_seen_img">
+            </div>
+            <div class="as_seen_card">
+              <img src="images/Dim/Xiaolong.jpg" alt="As seen 3" class="as_seen_img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 首页第三部分：菜单 -->
+  <section class="menu_showcase_section" id="menu_section">
+    <div class="container menu_showcase_container">
+
+      <div class="menu_showcase_top">
+        <div class="menu_showcase_title">MENU</div>
+
+        <div class="menu_showcase_arrows">
+          <button class="menu_arrow" type="button" aria-label="Previous" id="menu_prev">‹</button>
+          <button class="menu_arrow" type="button" aria-label="Next" id="menu_next">›</button>
+        </div>
+      </div>
+
+      <div class="menu_cards_grid" id="menu_cards_grid"></div>
+
+    </div>
+  </section>
+
+
+  <!-- 首页第四部分：catering -->
+  <section class="locations_section" id="catering_section">
+    <div class="container locations_container">
+
+      <!-- 左侧 -->
+      <div class="hours_card">
+        <div class="hours_block">
+          <div class="hours_title">CATERING</div>
+          <div class="hours_line">
+            <span class="hours_day">SIZE</span>
+            <span class="hours_time">6–30 PEOPLE</span>
+          </div>
+        </div>
+
+        <div class="hours_block">
+          <div class="hours_title">WHAT’S INCLUDED</div>
+          <div class="hours_line">
+            <span class="hours_day">NOODLES</span>
+            <span class="hours_time">FRESH & READY</span>
+          </div>
+        </div>
+
+        <div class="hours_divider"></div>
+
+        <!-- 按钮 -->
+        <div class="hours_block">
+          <div class="hours_title">CHECK FULL MENU</div>
+          <a class="hours_button" href="#menu_section">CHECK FULL MENU</a>
+        </div>
+      </div>
+
+      <!-- 右侧 -->
+      <div class="location_right">
+        <div class="location_title">CATERING</div>
+        <div class="location_image_frame">
+          <img src="images/AllNoodle.jpg" alt="Location image" class="location_image">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--  页脚部分 -->
+  <footer class="footer_section" id="contact_section">
+    <div class="container footer_container_new">
+
+      <!-- 页脚左侧 -->
+      <div class="footer_col_left">
+        <!-- <div class="footer_brand_badge">
+          <img src="images/" alt="Noople Logo" class="footer_brand_img">
+        </div> -->
+
+        <div class="footer_desc">
+          Noople Noodle House brings you a relaxed, no-rush dining experience,
+          featuring fresh noodles and crispy fried fish made to order.
+        </div>
+
+        <div class="footer_copy">© 2026 NOOPLE NOODLE HOUSE</div>
+      </div>
+
+      <!-- 页脚右侧 -->
+      <div class="footer_col_right">
+        <a class="footer_link" href="#top">Home</a>
+        <a class="footer_link" href="#menu_section">Menu</a>
+        <a class="footer_link" href="#catering_section">Catering</a>
+        <a class="footer_link" href="#contact_section">Contact Us</a>
+
+        <!-- moved under links -->
+        <div class="footer_right_bottom">
+          <div class="footer_location">
+            7-3003 KINGSWAY, BURNABY
+          </div>
+
+          <div class="footer_social_row">
+            <a class="social_icon_box" href="#" aria-label="Instagram">◎</a>
+            <a class="social_icon_text" href="#" aria-label="Xiaohongshu">小红书</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script>
+    // 手机端功能
+    (function () {
+      var toggle = document.getElementById('nav_toggle');
+      var mobile = document.getElementById('nav_mobile');
+      var is_open = false;
+
+      function setOpen(next) {
+        is_open = next;
+        if (is_open) mobile.classList.add('is_open');
+        else mobile.classList.remove('is_open');
+      }
+
+      toggle.addEventListener('click', function () {
+        setOpen(!is_open);
+      });
+
+      mobile.addEventListener('click', function (e) {
+        if (e.target && e.target.classList.contains('nav_mobile_link')) {
+          setOpen(false);
+        }
+      });
+    })();
+
+    
+    (function () {
+      var track = document.getElementById('hero_slider_track');
+      var slides = track.querySelectorAll('.hero_slide');
+      var prevBtn = document.getElementById('hero_prev');
+      var nextBtn = document.getElementById('hero_next');
+
+      var current = 0;
+      var timer = null;
+      var interval_ms = 4200;
+
+      function goTo(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+
+        slides[current].classList.remove('is_active');
+        current = index;
+        slides[current].classList.add('is_active');
+      }
+
+      function next() { goTo(current + 1); }
+      function prev() { goTo(current - 1); }
+
+      function restart() {
+        if (timer) clearInterval(timer);
+        timer = setInterval(next, interval_ms);
+      }
+
+      nextBtn.addEventListener('click', function () { next(); restart(); });
+      prevBtn.addEventListener('click', function () { prev(); restart(); });
+
+      goTo(0);
+      restart();
+    })();
+
+    //meun部分的功能
+    (function () {
+      var grid = document.getElementById('menu_cards_grid');
+      var prevBtn = document.getElementById('menu_prev');
+      var nextBtn = document.getElementById('menu_next');
+
+      var menu_items = [
+        { 
+          img: "images/Dim/Xiaolong.jpg", 
+          title: "SOUP DUMPLINGS", 
+          sub: "小笼包  JUICY & SOFT", 
+          tag: "Hot and Fresh",
+          desc: "Steamed soup dumplings with thin wrappers and rich broth inside. Best served warm — one bite, full flavour." 
+        },
+
+        { img: "images/Dry/FamilyDryNoodle.jpg",
+          title: "FamilyDryNoodle", 
+          sub: "全家福拌面  SAVOURY & COMFORT", 
+          tag: "Rich and Satisfying",
+          desc: "Dry noodles topped with tender beef slices, chewy beef tendon, and savory minced pork, tossed in our house sauce for a rich and satisfying bite." 
+        },
+
+        { img: "images/DeepFried/Fish and Chips.jpg", 
+          title: "FISH and Chips",
+          sub: "炸鱼薯条  CRISPY & GOLDEN", 
+          tag: "Crispy and Tender",
+          desc: "Made-to-order fried fish: crispy outside, tender inside, paired with simple sides for a no-rush meal." 
+        },
+
+        { 
+          img: "images/Soup/FamilySoupNoodle.jpg", 
+          title: "FamilySoupNoodle", 
+          sub: "全家福汤面  SAVOURY & COMFORT", 
+          tag: "Rich and Satisfying",
+          desc: "Noodles in a slow-simmered chicken and pork bone broth, topped with tender beef slices, chewy beef tendon, beef meatballs, and beef tendon meatballs for a rich and comforting bite." 
+        },
+
+        { 
+          img: "images/Dry/ChiliOilWonton.jpg", 
+          title: "ChiliOilWonton", 
+          sub: "红油抄手  Rich & Spicy", 
+          tag: "Chili Oil",
+          desc: "Tender pork wontons served in a rich chili oil sauce with garlic and soy, delivering a perfect balance of savory, spicy, and aromatic flavors in every bite." 
+        },
+
+        { 
+          img: "images/Dry/GreenOnionDryNoodle.jpg", 
+          title: "GreenOnionDryNoodle", 
+          sub: "煎蛋葱油拌面  Classic Flavor", 
+          tag: "Savory & Aromatic",
+          desc: "Dry noodles coated in aromatic scallion oil and soy sauce, finished with a golden fried egg. A simple yet deeply flavorful comfort classic." 
+        }
+      ];
+
+      var per_page = 3;
+      var page = 0;
+      var max_page = Math.ceil(menu_items.length / per_page);
+
+      function render() {
+        grid.innerHTML = "";
+        var start = page * per_page;
+        var end = start + per_page;
+        var slice = menu_items.slice(start, end);
+
+        for (var i = 0; i < slice.length; i++) {
+          var item = slice[i];
+          var card = document.createElement("div");
+          card.className = "menu_item_card";
+
+          card.innerHTML =
+            '<div class="menu_item_img_wrap">' +
+              '<img src="' + item.img + '" alt="' + item.title + '" class="menu_item_img">' +
+            '</div>' +
+            '<div class="menu_item_name">' + item.title + '</div>' +
+            '<div class="menu_item_sub">' + item.sub + '</div>' +
+            '<div class="menu_item_tag">' + item.tag + '</div>' +
+            '<div class="menu_item_desc">' + item.desc + '</div>';
+
+          grid.appendChild(card);
+        }
+      }
+
+      function next() {
+        page = page + 1;
+        if (page >= max_page) page = 0;
+        render();
+      }
+
+      function prev() {
+        page = page - 1;
+        if (page < 0) page = max_page - 1;
+        render();
+      }
+
+      nextBtn.addEventListener("click", next);
+      prevBtn.addEventListener("click", prev);
+
+      render();
+    })();
+  </script>
+
+</body>
+</html>
